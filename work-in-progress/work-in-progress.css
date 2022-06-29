@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: "EasyReading";
+    src: url(font/EasyReadingPRO.woff) format('woff');
+} */
+
+body {
+    background-image: url("me2-02.png");
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+
+    margin: 0 2vw 0 2vw;
+}
+
+p {
+    font-family: 'Courier', Courier, monospace;
+}
+
+.download a {
+    position: relative;
+    top: 80vh;
+
+    font-family: 'Courier', Courier, monospace;
+    color: black;
+    text-decoration: none;
+}
