@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Silvia De Negri">
+    
+    <title>Dnsign</title>
+    <meta name="title" content="Dnsign - Silvia De Negri's Portfolio">
+    <meta name="description" content="How Might We, a digital magazine for enviromental artist">
+
+    <!-- Social media meta MISSING -->
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body class="hmw">
+    <div id="wrapper hmw">
+
+        <nav>
+            <details>
+                <summary><img src="img/menu.svg" alt=""></summary>
+                    <section class="menu">
+                        <ul>
+                            <li><a href="web-design-projects.html">web design</a></li>
+                            <li><a href="graphic-design-projects.html">graphic design</a></li>
+                            <li><a href="photography-projects.html">photography</a></li>
+                            <li><a href="cv.html">CV</li>
+
+                    </section>
+            </details>
+            <img src="img/pittogramma.svg" alt="minimal illustrated woman face" width="30px" height="30px" class="pittogramma">
+
+        </nav>
+        <div class="project-title">
+        <h1 class=" hmw-web"> how might we</h1>
+        </div>
+
+        <section class="landing-project">
+            <picture class="hmw-cover">
+                <source media="(min-width:500px)" srcset="img/web-cover-hmw.webp" width="800px">
+                <source  media="(min-width:500px)" srcset="img/web-cover-hmw2.avif">
+                <img src="img/phone/hmw-phone.jpg" width="350px" alt="">
+            </picture>
+        <div class="bottom-bar">
+            <section class="project-description">
+                <div class="info">
+                    <p> Editorial Design <br>
+                        May 2022 <br>
+                        SPD Project</p>
+                </div>
+                <div class="scroll">
+                    <a href="https://silviadenegri.github.io/editorial-design-HM.W/">
+                                <p class="note">visit the website</p>
+                                <img src="img/v-arrow.svg" height="40px" alt="">
+                    </a>
+                </div>
+                <div class="concept">
+                    <p>Create a gateway to promote the work of those artists who strive to create masterpieces that help the environment and raise awareness of climate change</p>
+                </div>
+            </section>
+        </div>
+        
+        <section class="project-display">
+            
+            <div class="project-title display">
+                <h1 class="slideshow-title"> how might we</h1>
+            </div>
+            
+            <section class="slideshow">
+                <img class="slides" src="img/hmw-home.webp">
+                <img class="slides" src="img/hmw-archive.webp">
+                <img class="slides" src="img/hmw-article.webp">
+            </section>
+            
+        </section>
+        
+    </section>
+    
+    <div class="bottom-bar">
+        <section class="project-description">
+            <div class="info">
+                <p> Editorial Design <br>
+                    May 2022 <br>
+                    SPD Project</p>
+            </div>
+            <div class="scroll">
+                <a href="https://silviadenegri.github.io/editorial-design-HM.W/">
+                            <p class="note">visit the website</p>
+                            <img src="img/v-arrow.svg" height="40px" alt="">
+                </a>
+            </div>
+            <div class="concept">
+                <p>Create a gateway to promote the work of those artists who strive to create masterpieces that help the environment and raise awareness of climate change</p>
+            </div>
+        </section>
+    </div>
+    
+
+    </div>
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); 
+        }
+        </script>
+        
+</body>
+
+
