@@ -7,138 +7,169 @@
     <meta name="author" content="Silvia De Negri">
     
     <title>Dnsign</title>
+    <link rel="icon" href="img/nav/pittogramma.svg" type="image/x-icon">
     <meta name="title" content="Dnsign - Silvia De Negri's Portfolio">
-    <meta name="description" content="A web & graphic design portfolio of Silvia De Negri a Master student based in Milan">
+    <meta name="description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
 
-    <!-- Social media meta MISSING -->
+   
+    <!-- Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.dnsign.it/">
+    <meta property="og:title" content="DNSIGN web portfolio">
+    <meta property="og:description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
+    <meta property="og:image" content="img/social-card.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://www.dnsign.it/">
+    <meta property="twitter:title" content="DNSIGN web portfolio">
+    <meta property="twitter:description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
+    <meta property="twitter:image" content="img/social-card.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
-    <div id="wrapper">
-
+    <div class="wrapper">
         <nav>
-            <details>
-                <summary><img src="img/menu.svg" alt=""></summary>
-                    <section class="menu">
-                        <ul>
-                            <li><a href="web-design-projects.html">web design</a></li>
-                            <li><a href="graphic-design-projects.html">graphic design</a></li>
-                            <li><a href="photography-projects.html">photography</a></li>
-                            <li><a href="cv.html">CV</li>
-
-                    </section>
-            </details>
-            <img src="img/pittogramma.svg" alt="minimal illustrated woman face" width="30px" height="30px" class="pittogramma">
-
+           <img src="img/nav/pittogramma.svg" alt="pictogram illustrated of a faceless girl with short curly hair" class="nav-logo">
+           <a href="about.html" class="about">about</a>
         </nav>
 
-        <section class="landing">
-            <img src="img/logo.svg" alt="minimal illustrated woman face that rest on the stage-name dnsign" width="700px" height="700px" class="logo">
-            <!-- <div class="deescription">
-                <h1>Hi!</h1>
-                <p class="description-text">I'm Silvia, a web & graphic designer based in Milan</p>
-                <img src="img/arrow.svg" alt="" width="201.7px" height="310.74px" class="arrow">
-            </div> -->
-        </section>
-
         <main>
-            <article class="web">
-                <section class="category web">
-
-                    <section class="section-title">
-                        <h2>web design</h2>
-                    </section>
-                    
-
-                    <section class="cover">
-                        <picture>
-                            <source media="(min-width:500px)" srcset="img/web-cover-hmw.webp" width="900px">
-                            <source  media="(min-width:500px)" srcset="img/web-cover-hmw2.avif">
-                            <img src="img/phone/hmw-phone.jpg" width="350px" alt="">
-                        </picture>
-                    </section>
-
+            <article class="landing">
+                <img src="img/logo.svg" alt="illustration of a faceless girl with short curly hair on top on the name of the page" class="welcome-illustration">
+                <section class="welcome-text">
+                    <h1>Hi! <br> I'm Silvia, a web & graphic designer based in Milan</h1>
+                    <img src="img/arrow.svg" alt="">
                 </section>
-
-                <section class="explore web">
-                    <a href="hmw.html">
-                                <p class="note">click to explore</p>
-                                <img src="img/h-arrow.svg" width="40px" alt="">
-                    </a>
-                </section>
-
             </article>
 
-            <article class="graphic">
-                <section class="category graphic">
+            <article class="projects">
+                <a href="hmw.html" class="project-category">
 
-                    <section class="section-title">
-                        <h2>graphic design</h2>
+                    <section class="category-title">
+                        <div class="w-one">
+                            <span>w</span>
+                            <span>e</span>
+                            <span>b </span>
+                        </div>
+                        <div class="w-two">
+                            <span>d</span>
+                            <span>e</span>
+                            <span>s</span>
+                            <span>i</span>
+                            <span>g</span>
+                            <span>n</span>
+                        </div>
                     </section>
 
-                    <section class="cover">
-                        <picture>
-                            <source media="(min-width:500px)" srcset="img/ttl-cover.webp" width="900px">
-                            <source media="(min-width:500px)" srcset="img/ttl-cover2.avif">
-                            <img src="img/phone/ttl-phone.webp" width="350px" alt="">
-                        </picture>
-                    </section>
+                    <picture class="category-cover">
+                            <source media="(min-width:500px)" srcset="img/web-design-cover.webp" width="800px">
+                            <source media="(min-width:500px)" srcset="img/web-design-cover.avif" width="800px">
+                            <img src="img/phone/web-design-phone-cover.webp" alt="3d mock-up of one of the web design project in the portfolio" width="200px">
+                    </picture>
 
-                </section>
+                    <div class="discover">
+                        <p>click to discover</p>
+                        <img src="img/h-arrow.svg" alt="">
+                </div> 
 
-                <section class="explore graphic">
-                    <a href="#">
-                                <p class="note">click to explore</p>
-                                <img src="img/h-arrow.svg" width="40px" alt="">
-                    </a>
-                </section>
-
-            </article>
-
-            <article class="photography">
-                <section class="category photo">
-
-                    <section class="section-title">
-                        <h2>photography</h2>
-                    </section>
-
-                    <section class="cover">
-                        <picture>
-                            <source media="(min-width:500px)" srcset="img/photo-cover.webp" width="900px">
-                            <source media="(min-width:500px)" srcset="img/photo-cover2.avif">
-                            <img src="img/phone/photo-phone.jpg" width="350px" alt="">
-                        </picture>
-                    </section>
-
-                </section>
-
-                <section class="explore photo">
-                    <a href="#">
-                                <p class="note">click to explore</p>
-                                <img src="img/h-arrow.svg" width="40px" alt="">
-                    </a>
-                </section>
-
-            </article>
+                </a>
             
+                <a href="#" class="project-category">
+                    <section class="category-title">
+                        <div class="w-one">
+                            <span>g</span>
+                            <span>r</span>
+                            <span>a</span>
+                            <span>p</span>
+                            <span>h</span>
+                            <span>i</span>
+                            <span>c</span>
+                        </div>
+                        <div class="w-two">
+                            <span>d</span>
+                            <span>e</span>
+                            <span>s</span>
+                            <span>i</span>
+                            <span>g</span>
+                            <span>n</span>
+                        </div>
+                    </section>
+
+                    <picture class="category-cover">
+                        <source media="(min-width:500px)" srcset="img/graphic-design-cover.webp" width="800px">
+                        <source media="(min-width:500px)" srcset="img/graphic-design-cover.avif" width="800px">
+                        <img src="img/phone/graphic-design-phone-cover.webp" alt="3d mock-up of one of the web design project in the portfolio" width="200px">
+                    </picture>
+                    
+                    <div class="discover">
+                        <p>click to discover</p>
+                        <img src="img/h-arrow.svg" alt="">
+                    </div>
+                </a> 
+                
+                <a href="#" class="project-category">
+                    <section class="category-title">
+                        <div class="w-one">
+                            <span>p</span>
+                            <span>h</span>
+                            <span>o</span>
+                            <span>t</span>
+                            <span>o</span>
+                            <span>g</span>
+                            <span>r</span>
+                            <span>a</span>
+                            <span>p</span>
+                            <span>h</span>
+                            <span>y</span>
+                        </div>
+                    </section>
+
+                    <picture class="category-cover">
+                        <source media="(min-width:500px)" srcset="img/photography-cover.webp" width="800px">
+                        <source media="(min-width:500px)" srcset="img/photography-cover.avif" width="800px">
+                        <img src="img/phone/photography-phone-cover.webp" alt="3d mock-up of one of the web design project in the portfolio" width="200px">
+                    </picture>
+                    
+                    <div class="discover">
+                        <p>click to discover</p>
+                        <img src="img/h-arrow.svg" alt="">
+                    </div>
+                </a>            
+            </article>
+
         </main>
 
         <footer>
-            <img src="img/pittogramma.svg" alt="minimal illustrated woman face" width="24px" height="24px" class="footer-logo">
-            <a class="mail" href="mailto:info@dnsign.it">info@dnsign.it</a>
+            <img src="img/nav/pittogramma.svg" alt="pictogram illustrated of a faceless girl with short curly hair" class="footer-logo">
+            <a href="mailto:info@dnsign.it" class="mail">info@dnsign.it</a>
             <div class="social">
-                <a class="ig" href="https://www.instagram.com/dnsign_/?hl=en"><img src="img/instagram.svg" width="18px" height="18px" alt=""></a>
-                <a class="linkdin" href="https://www.linkedin.com/in/denegrisilvia/"><img src="img/linkedin.svg" width="18px" height="18px" alt=""></a>
+                <a href="https://www.instagram.com/dnsign_/?hl=en"><img src="img/footer/instagram.svg" alt="instagram logo"></a>
+                <a href="https://www.linkedin.com/in/denegrisilvia/"><img src="img/footer/linkedin.svg" alt="linkedin logo"></a>
             </div>
         </footer>
 
     </div>
 
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  
+  <script>
+    gsap.to(".category-cover", {
+      scrollTrigger: {
+        trigger: "project-category",
+        scrub: true
+      },
+      y: -500,
+    });
+
+  </script> -->
+
 </body>
-</html>
