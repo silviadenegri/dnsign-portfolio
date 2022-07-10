@@ -49,6 +49,10 @@ nav {
     font-size: 1.5rem;
 }
 
+.about:hover {
+    color: var(--red);
+}
+
 /* landing */
 
 .landing {
@@ -156,15 +160,17 @@ nav {
 /* footer */
 
 footer img {
-    max-width: 40px;
+    max-width: 30px;
     min-width: 25px;
 
     margin: .5vw;
+    margin-bottom: 1.5vw;
 }
 
 footer {
     display:flex;
     justify-content: space-between;
+    align-items: center;
     padding: 2vw 2vw 0 2vw ;
     width: 96vw;
  }
@@ -175,7 +181,160 @@ footer {
     font-family: 'Courier New', Courier, monospace;
  }
 
+ .mail:hover {
+    color: var(--red);
+ }
+
  .social {
    display: flex;
  }
 
+ .social>a img {
+    opacity: .5;
+ }
+
+ .social>a img:hover {
+    opacity:1;
+ }
+
+ /* //////////////////////////// SINGLE PROJECT ////////////////////////// */
+
+.wrapper-hmw {
+    background-color: #173224;
+}
+
+.single-project-cover {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    width:100vw;
+}
+
+.single-project-cover>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    height: 100vh;
+}
+
+.black-overlay {
+    background-color: black;
+}
+
+.project-title {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    color: #9B372C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Druk;
+    font-size: 10rem;
+
+    padding: 2vw;
+    width:96vw;
+
+    z-index:1;
+}
+
+.project-title .w-one, .w-two, .w-three {
+    display: flex;
+    justify-content: space-between;
+
+    width: 80vw;
+}
+
+.project-cover {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    filter: grayscale(1);
+}
+
+/* bottom description */
+
+.project-description {
+    position:fixed;
+    top: 78vh;
+
+    width: 96vw;
+    padding: 2vw 0 2vw 4vw;
+
+    display: flex;
+    justify-content: space-between;
+    margin:0 auto;
+
+    z-index:2;
+}
+
+.concept, .info {
+    width: 30vw;
+
+    font-family: 'Courier', Courier, monospace;
+    font-size: 1rem;
+
+    color: white;
+}
+
+.scroll a {
+    font-family: 'Reenie Beanie', cursive;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+    color:white;
+    text-decoration: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.scroll a:hover {
+    color: var(--red)
+}
+
+.scroll img {
+    max-height: 20px;
+}
+
+/* slideshow */
+
+.project-display {
+    display: grid;
+    grid-template-columns: 1;
+    grid-template-rows: auto;
+    width:100vw;
+}
+
+.project-display>* {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    height: 100vh;
+}
+
+.slideshow-title {
+    color: #9B372C;
+    text-transform: uppercase;
+    font-family: Druk;
+    font-size: 10rem;
+    letter-spacing: -10px;
+
+    align-items: center;
+}
+
+.slideshow {
+    display: flex;
+    justify-content: center;
+}
+
+.slides{
+   max-width: 1000px;
+}
+
+ /* //////////////////////////// CV ////////////////////////// */
+
+ 

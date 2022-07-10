@@ -7,85 +7,117 @@
     <meta name="author" content="Silvia De Negri">
     
     <title>Dnsign</title>
+    <link rel="icon" href="img/nav/pittogramma.svg" type="image/x-icon">
     <meta name="title" content="Dnsign - Silvia De Negri's Portfolio">
-    <meta name="description" content="How Might We, a digital magazine for enviromental artist">
+    <meta name="description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
 
-    <!-- Social media meta MISSING -->
+   
+    <!-- Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.dnsign.it/">
+    <meta property="og:title" content="DNSIGN web portfolio">
+    <meta property="og:description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
+    <meta property="og:image" content="img/social-card.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="http://www.dnsign.it/">
+    <meta property="twitter:title" content="DNSIGN web portfolio">
+    <meta property="twitter:description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
+    <meta property="twitter:image" content="img/social-card.png">
 
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="hmw">
-    <div id="wrapper hmw">
+<body>
+
+    <div class="wrapper-hmw">
 
         <nav>
-            <details>
-                <summary><img src="img/menu.svg" alt=""></summary>
-                    <section class="menu">
-                        <ul>
-                            <li><a href="web-design-projects.html">web design</a></li>
-                            <li><a href="graphic-design-projects.html">graphic design</a></li>
-                            <li><a href="photography-projects.html">photography</a></li>
-                            <li><a href="cv.html">CV</li>
+            <a href="index.html"><img src="img/nav/pittogramma.svg" alt="pictogram illustrated of a faceless girl with short curly hair" class="nav-logo"></a>
+            <a href="about.html" class="about">about</a>
+         </nav>
 
-                    </section>
-            </details>
-            <img src="img/pittogramma.svg" alt="minimal illustrated woman face" width="30px" height="30px" class="pittogramma">
+        <main>
 
-        </nav>
-        <div class="project-title">
-        <h1 class=" hmw-web"> how might we</h1>
-        </div>
+            <section class="project-description">
+                <div class="info">
+                    <p> Editorial Design <br>
+                        May 2022 <br>
+                        SPD Project</p>
+                </div>
 
-        <section class="landing-project">
-            <picture class="hmw-cover">
-                <source media="(min-width:500px)" srcset="img/web-cover-hmw.webp" width="800px">
-                <source  media="(min-width:500px)" srcset="img/web-cover-hmw2.avif">
-                <img src="img/phone/hmw-phone.jpg" width="350px" alt="">
-            </picture>
+                <div class="scroll">
+                    <a href="https://silviadenegri.github.io/editorial-design-HM.W/">
+                                <p class="note">visit the website</p>
+                                <img src="img/v-arrow.svg" height="40px" alt="">
+                    </a>
+                </div>
 
-        </div>
-        
-        <section class="project-display">
-            
-            <div class="project-title display">
-                <h1 class="slideshow-title"> how might we</h1>
-            </div>
-            
-            <section class="slideshow">
-                <img class="slides" src="img/hmw-home.webp">
-                <img class="slides" src="img/hmw-archive.webp">
-                <img class="slides" src="img/hmw-article.webp">
+                <div class="concept">
+                    <p>Create a gateway to promote the work of those artists who strive to create masterpieces that help the environment and raise awareness of climate change</p>
+                </div>
             </section>
+
+            <article class="single-project-cover">
+                    
+                        <picture class="project-cover">
+                            <source media="(min-width:500px)" srcset="img/project/archive-cover/how-might-we-cover.webp" width="800px">
+                            <source media="(min-width:500px)" srcset="img/project/archive-cover/how-might-we-cover.avif" width="800px">
+                            <img src="img/project/archive-cover/how-might-we-phone-cover.webp" alt="cover image extract from the content of the project" width="200px">
+                        </picture>
+
+                <section class="project-title">
+                    <div class="w-one">
+                        <span>h</span>
+                        <span>o</span>
+                        <span>w </span>
+                    </div>
+                    <div class="w-two">
+                        <span>m</span>
+                        <span>i</span>
+                        <span>g</span>
+                        <span>h</span>
+                        <span>t</span>
+                    </div>
+                    <div class="w-three">
+                        <span>w</span>
+                        <span>e</span>
+                    </div>
+                </section>
             
-        </section>
-        
-    </section>
-    
-    <div class="bottom-bar">
-        <section class="project-description">
-            <div class="info">
-                <p> Editorial Design <br>
-                    May 2022 <br>
-                    SPD Project</p>
+            </article>
+
+            <article class="project-display">
+            
+                <div class="project-title-display">
+                    <h1 class="slideshow-title"> how <br> might <br> we</h1>
+                </div>
+                
+                <section class="slideshow">
+                    <img class="slides" src="img/project/how-might-we/how-might-we-landing.webp">
+                    <img class="slides" src="img/project/how-might-we/how-might-we-homepage.webp">
+                    <img class="slides" src="img/project/how-might-we/how-might-we-archive.webp">
+                    <img class="slides" src="img/project/how-might-we/how-might-we-article.webp">
+                </section>
+                
+            </article>
+
+        </main>
+
+        <footer>
+            <img src="img/nav/pittogramma.svg" alt="pictogram illustrated of a faceless girl with short curly hair" class="footer-logo">
+            <a href="mailto:info@dnsign.it" class="mail">info@dnsign.it</a>
+            <div class="social">
+                <a href="https://www.instagram.com/dnsign_/?hl=en"><img src="img/footer/instagram.svg" alt="instagram logo"></a>
+                <a href="https://www.linkedin.com/in/denegrisilvia/"><img src="img/footer/linkedin.svg" alt="linkedin logo"></a>
             </div>
-            <div class="scroll">
-                <a href="https://silviadenegri.github.io/editorial-design-HM.W/">
-                            <p class="note">visit the website</p>
-                            <img src="img/v-arrow.svg" height="40px" alt="">
-                </a>
-            </div>
-            <div class="concept">
-                <p>Create a gateway to promote the work of those artists who strive to create masterpieces that help the environment and raise awareness of climate change</p>
-            </div>
-        </section>
-    </div>
-    
+        </footer>
 
     </div>
 
@@ -105,7 +137,5 @@
           setTimeout(carousel, 2000); 
         }
         </script>
-        
+
 </body>
-
-
