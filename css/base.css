@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Druk';
+  src: url(font/DrukTextCyrMedium.woff) format('woff');
+}
+
+.wrapper {
+  background-color: #272727;
+
+  font-family: 'Courier', Courier, monospace;
+}
+
+:root {
+  --red: #c10202;
+}
+
+/* nav */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100vw;
+
+  padding: 2vh 5vw 0 5vw;
+
+  position: fixed;
+
+  z-index: 2;
+}
+
+.nav-logo {
+  max-width: 40px;
+  min-width: 25px;
+}
+
+.about {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  font-family: Druk;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+}
+
+.about:hover {
+  color: var(--red);
+}
+
+/* footer */
+
+footer img {
+  max-width: 30px;
+  min-width: 25px;
+
+  margin: 0.5vw;
+  margin-bottom: 1.5vw;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vw 2vw 0 2vw;
+  width: 96vw;
+}
+
+.mail {
+  color: white;
+  text-decoration: none;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.mail:hover {
+  color: var(--red);
+}
+
+.social {
+  display: flex;
+}
+
+.social > a img {
+  opacity: 0.5;
+}
+
+.social > a img:hover {
+  opacity: 1;
+}

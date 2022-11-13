@@ -1,141 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Silvia De Negri">
-    
-    <title>Dnsign</title>
-    <link rel="icon" href="img/nav/pittogramma.svg" type="image/x-icon">
-    <meta name="title" content="Dnsign - Silvia De Negri's Portfolio">
-    <meta name="description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Silvia De Negri" />
 
-   
+    <title>Dnsign</title>
+    <link rel="icon" href="img/nav/pittogramma.svg" type="image/x-icon" />
+    <meta name="title" content="Dnsign - Silvia De Negri's Portfolio" />
+    <meta
+      name="description"
+      content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out"
+    />
+
     <!-- Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.dnsign.it/">
-    <meta property="og:title" content="DNSIGN web portfolio">
-    <meta property="og:description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
-    <meta property="og:image" content="img/social-card.png">
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://www.dnsign.it/" />
+    <meta property="og:title" content="DNSIGN web portfolio" />
+    <meta
+      property="og:description"
+      content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out"
+    />
+    <meta property="og:image" content="img/social-card.png" />
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="http://www.dnsign.it/">
-    <meta property="twitter:title" content="DNSIGN web portfolio">
-    <meta property="twitter:description" content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out">
-    <meta property="twitter:image" content="img/social-card.png">
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="http://www.dnsign.it/" />
+    <meta property="twitter:title" content="DNSIGN web portfolio" />
+    <meta
+      property="twitter:description"
+      content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out"
+    />
+    <meta property="twitter:image" content="img/social-card.png" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/project.css" />
+  </head>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-<body>
-
+  <body>
     <div class="wrapper-hmw">
+      <nav>
+        <a href="index.html"
+          ><img
+            src="img/nav/pittogramma.svg"
+            alt="pictogram illustrated of a faceless girl with short curly hair"
+            class="nav-logo"
+        /></a>
+        <a href="about.html" class="about">about</a>
+      </nav>
 
-        <nav>
-            <a href="index.html"><img src="img/nav/pittogramma.svg" alt="pictogram illustrated of a faceless girl with short curly hair" class="nav-logo"></a>
-            <a href="about.html" class="about">about</a>
-         </nav>
+      <main>
+        <section class="project-description">
+          <div class="info">
+            <p>
+              Editorial Design <br />
+              May 2022 <br />
+              SPD Project
+            </p>
+          </div>
 
-        <main>
+          <div class="scroll">
+            <a href="https://silviadenegri.github.io/editorial-design-HM.W/">
+              <p class="note">visit the website</p>
+              <img src="img/v-arrow.svg" height="40px" alt="" />
+            </a>
+          </div>
 
-            <section class="project-description">
-                <div class="info">
-                    <p> Editorial Design <br>
-                        May 2022 <br>
-                        SPD Project</p>
-                </div>
+          <div class="concept">
+            <p>
+              Create a gateway to promote the work of those artists who strive
+              to create masterpieces that help the environment and raise
+              awareness of climate change
+            </p>
+          </div>
+        </section>
 
-                <div class="scroll">
-                    <a href="https://silviadenegri.github.io/editorial-design-HM.W/">
-                                <p class="note">visit the website</p>
-                                <img src="img/v-arrow.svg" height="40px" alt="">
-                    </a>
-                </div>
+        <article class="single-project-cover">
+          <picture class="project-cover">
+            <source
+              media="(min-width:500px)"
+              srcset="img/project/archive-cover/how-might-we-cover.webp"
+              width="800px"
+            />
+            <source
+              media="(min-width:500px)"
+              srcset="img/project/archive-cover/how-might-we-cover.avif"
+              width="800px"
+            />
+            <img
+              src="img/project/archive-cover/how-might-we-phone-cover.webp"
+              alt="cover image extract from the content of the project"
+              width="200px"
+            />
+          </picture>
 
-                <div class="concept">
-                    <p>Create a gateway to promote the work of those artists who strive to create masterpieces that help the environment and raise awareness of climate change</p>
-                </div>
-            </section>
-
-            <article class="single-project-cover">
-                    
-                        <picture class="project-cover">
-                            <source media="(min-width:500px)" srcset="img/project/archive-cover/how-might-we-cover.webp" width="800px">
-                            <source media="(min-width:500px)" srcset="img/project/archive-cover/how-might-we-cover.avif" width="800px">
-                            <img src="img/project/archive-cover/how-might-we-phone-cover.webp" alt="cover image extract from the content of the project" width="200px">
-                        </picture>
-
-                <section class="project-title">
-                    <div class="w-one">
-                        <span>h</span>
-                        <span>o</span>
-                        <span>w </span>
-                    </div>
-                    <div class="w-two">
-                        <span>m</span>
-                        <span>i</span>
-                        <span>g</span>
-                        <span>h</span>
-                        <span>t</span>
-                    </div>
-                    <div class="w-three">
-                        <span>w</span>
-                        <span>e</span>
-                    </div>
-                </section>
-            
-            </article>
-
-            <article class="project-display">
-            
-                <div class="project-title-display">
-                    <h1 class="slideshow-title"> how <br> might <br> we</h1>
-                </div>
-                
-                <section class="slideshow">
-                    <img class="slides" src="img/project/how-might-we/how-might-we-landing.webp">
-                    <img class="slides" src="img/project/how-might-we/how-might-we-homepage.webp">
-                    <img class="slides" src="img/project/how-might-we/how-might-we-archive.webp">
-                    <img class="slides" src="img/project/how-might-we/how-might-we-article.webp">
-                </section>
-                
-            </article>
-
-        </main>
-
-        <footer>
-            <img src="img/nav/pittogramma.svg" alt="pictogram illustrated of a faceless girl with short curly hair" class="footer-logo">
-            <a href="mailto:info@dnsign.it" class="mail">info@dnsign.it</a>
-            <div class="social">
-                <a href="https://www.instagram.com/dnsign_/?hl=en" target="_blank"><img src="img/footer/instagram.svg" alt="instagram logo"></a>
-                <a href="https://www.linkedin.com/in/denegrisilvia/" target="_blank"><img src="img/footer/linkedin.svg" alt="linkedin logo"></a>
+          <section class="project-title">
+            <div class="w-one">
+              <span>h</span>
+              <span>o</span>
+              <span>w </span>
             </div>
-        </footer>
+            <div class="w-two">
+              <span>m</span>
+              <span>i</span>
+              <span>g</span>
+              <span>h</span>
+              <span>t</span>
+            </div>
+            <div class="w-three">
+              <span>w</span>
+              <span>e</span>
+            </div>
+          </section>
+        </article>
 
+        <article class="project-display">
+          <div class="project-title-display">
+            <h1 class="slideshow-title">
+              how <br />
+              might <br />
+              we
+            </h1>
+          </div>
+
+          <section class="slideshow">
+            <img
+              class="slides"
+              src="img/project/how-might-we/how-might-we-landing.webp"
+            />
+            <img
+              class="slides"
+              src="img/project/how-might-we/how-might-we-homepage.webp"
+            />
+            <img
+              class="slides"
+              src="img/project/how-might-we/how-might-we-archive.webp"
+            />
+            <img
+              class="slides"
+              src="img/project/how-might-we/how-might-we-article.webp"
+            />
+          </section>
+        </article>
+      </main>
+
+      <footer>
+        <img
+          src="img/nav/pittogramma.svg"
+          alt="pictogram illustrated of a faceless girl with short curly hair"
+          class="footer-logo"
+        />
+        <a href="mailto:info@dnsign.it" class="mail">info@dnsign.it</a>
+        <div class="social">
+          <a href="https://www.instagram.com/dnsign_/?hl=en" target="_blank"
+            ><img src="img/footer/instagram.svg" alt="instagram logo"
+          /></a>
+          <a href="https://www.linkedin.com/in/denegrisilvia/" target="_blank"
+            ><img src="img/footer/linkedin.svg" alt="linkedin logo"
+          /></a>
+        </div>
+      </footer>
     </div>
 
     <script>
-        var myIndex = 0;
-        carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("slides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); 
-        }
-        </script>
+      var myIndex = 0;
+      carousel();
 
-</body>
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName('slides');
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = 'none';
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = 'block';
+        setTimeout(carousel, 2000);
+      }
+    </script>
+  </body>
+</html>

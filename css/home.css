@@ -1,0 +1,102 @@
+/* landing */
+
+.landing {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.welcome-illustration {
+  max-width: 600px;
+  min-width: 300px;
+
+  padding-top: 10vh;
+}
+
+.welcome-text img {
+  max-width: 100px;
+}
+
+.welcome-text {
+  position: absolute;
+
+  max-width: 200px;
+
+  left: 850px;
+  bottom: 400px;
+
+  color: var(--red);
+
+  /* display: none; */
+}
+
+/* project category */
+
+.projects {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+  width: 100vw;
+}
+
+.project-category > * {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+
+  height: 100vh;
+}
+
+.project-category {
+  display: grid;
+  justify-items: center;
+
+  color: var(--red);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Druk;
+  font-size: 4rem;
+
+  padding: 2vw;
+  width: 96vw;
+}
+
+.project-category:hover .discover {
+  color: var(--red);
+}
+
+.category-title {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2vw;
+  width: 96vw;
+}
+
+.category-title .w-one,
+.w-two {
+  display: flex;
+  justify-content: space-between;
+
+  width: 80vw;
+}
+
+.discover {
+  font-family: 'Reenie Beanie', cursive;
+  font-size: 2rem;
+  text-transform: lowercase;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.discover img {
+  max-width: 50px;
+}

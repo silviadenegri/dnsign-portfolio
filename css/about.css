@@ -1,0 +1,158 @@
+.about-page {
+  text-decoration: underline;
+  color: black;
+}
+
+footer > .mail-black {
+  color: black;
+}
+
+.main-about {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  width: 100vw;
+  padding: 4vw;
+
+  font-family: 'Courier', Courier, monospace;
+}
+
+.main-about a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-about a:hover {
+  text-decoration: underline;
+}
+
+.profile-picture {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.name {
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--red);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Druk;
+  font-size: 10rem;
+
+  height: 65vh;
+}
+
+.bio {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+
+  padding: 1vw 3vw 0 0;
+}
+
+h2 {
+  font-family: Druk;
+  color: #272727;
+  text-transform: uppercase;
+  font-size: 3rem;
+
+  padding: 2vw 0;
+}
+
+.timeline > h2 {
+  padding: 0;
+}
+
+/* education */
+
+.timeline {
+  grid-column: 2 / 5;
+  grid-row: 2 / 3;
+}
+
+.education {
+  display: flex;
+  overflow-x: scroll;
+}
+
+.education-tile {
+  width: 25vw;
+}
+
+.title {
+  width: 25vw;
+
+  font-family: Druk;
+  font-size: 2rem;
+  text-transform: uppercase;
+
+  height: 22vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.date {
+  padding: 3vh 0;
+
+  background-color: #272727;
+
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 2vh;
+}
+
+.task,
+.experience-description {
+  padding: 1vw;
+}
+
+.task {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*  */
+
+.skills {
+  grid-column: 2 / 5;
+  grid-row: 3 / 4;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.software img {
+  max-width: 50px;
+}
+
+.filled {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--red);
+}
+.empty {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 1px solid var(--red);
+}
+
+.language > h3 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
