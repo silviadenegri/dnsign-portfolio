@@ -15,6 +15,9 @@
   min-width: 300px;
 
   padding-top: 10vh;
+
+  position: relative;
+  z-index: 5;
 }
 
 .welcome-text img {
@@ -23,15 +26,12 @@
 
 .welcome-text {
   position: absolute;
+  left: 58vw;
+  top: 10vh;
 
-  max-width: 200px;
-
-  left: 850px;
-  bottom: 400px;
+  max-width: 240px;
 
   color: var(--red);
-
-  /* display: none; */
 }
 
 /* project category */
@@ -57,7 +57,7 @@
   color: var(--red);
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Druk;
+  font-family: 'Raleway', sans-serif;
   font-size: 4rem;
 
   padding: 2vw;
@@ -77,12 +77,10 @@
   width: 96vw;
 }
 
-.category-title .w-one,
-.w-two {
-  display: flex;
-  justify-content: space-between;
+.web p {
+  font-family: Druk;
 
-  width: 80vw;
+  letter-spacing: 90px;
 }
 
 .discover {
