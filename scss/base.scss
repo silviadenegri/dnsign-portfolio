@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+$primary-color-accent: #c10202;
+$color-neutral-darkest: #272727;
+
+html {
+  background-color: $color-neutral-darkest;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Druk';
+  src: url('./font/DrukCyrHeavy.woff') format('woff');
+}
+
+.typo--h2 {
+  font-size: 20rem;
+  color: white;
+}
+
+.typo--h3 {
+}
+
+.typo--h4 {
+}
+
+.typo--p {
+}
+
+.typo--lable {
+}
+
+.typo--link {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: lowercase;
+  font-size: 1.2rem;
+  color: white;
+}

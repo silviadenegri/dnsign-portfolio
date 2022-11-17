@@ -40,8 +40,7 @@
       href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="prod/style.css" />
   </head>
 
   <body>
@@ -52,7 +51,9 @@
           alt="pictogram illustrated of a faceless girl with short curly hair"
           class="nav-logo"
         />
-        <a href="about.html" class="about">about</a>
+        <div class="nav-voices">
+          <a href="about.html" class="voice">about</a>
+        </div>
       </nav>
 
       <main>
@@ -62,26 +63,35 @@
             src="img/logo.svg"
             alt="illustration of a faceless girl with short curly hair on top on the name of the page"
           />
-          <section class="welcome-text">
+          <div class="welcome-text">
             <h1>
               Hi! <br />
               I'm Silvia, a front-end developer and graphic designer based in
               Milan
             </h1>
-            <img src="img/arrow.svg" alt="" />
-          </section>
+            <img src="img/svg/red-arrow-upwards-dx.svg" alt="" />
+          </div>
         </article>
 
-        <article class="projects">
-          <a href="hmw.html" class="project-category">
-            <section class="category-title">
-              <div class="web">
-                <p class="uppercase">web</p>
-                <p class="uppercase">design</p>
+        <article class="sections--container">
+          <a href="hmw.html" class="section_content">
+            <section class="section_title">
+              <div class="typo--h2 bg-title uppercase">
+                <span>w</span>
+                <span>e</span>
+                <span>b</span>
+              </div>
+              <div class="typo--h2 bg-title uppercase">
+                <span>d</span>
+                <span>e</span>
+                <span>s</span>
+                <span>i</span>
+                <span>g</span>
+                <span>n</span>
               </div>
             </section>
 
-            <picture class="category-cover">
+            <picture class="section-cover">
               <source
                 media="(min-width:500px)"
                 srcset="img/web-design-cover.webp"
@@ -100,14 +110,14 @@
             </picture>
 
             <div class="discover">
-              <p>click to discover</p>
-              <img src="img/h-arrow.svg" alt="" />
+              <p class="typo--link">click to discover</p>
+              <img src="img/svg/red-arrow-horizontal.svg" alt="" />
             </div>
           </a>
 
-          <a href="#" class="project-category">
-            <section class="category-title">
-              <div class="w-one">
+          <a href="#" class="section_content">
+            <section class="section_title">
+              <div class="typo--h2 bg-title">
                 <span>g</span>
                 <span>r</span>
                 <span>a</span>
@@ -116,7 +126,7 @@
                 <span>i</span>
                 <span>c</span>
               </div>
-              <div class="w-two">
+              <div class="typo--h2 bg-title">
                 <span>d</span>
                 <span>e</span>
                 <span>s</span>
@@ -126,7 +136,7 @@
               </div>
             </section>
 
-            <picture class="category-cover">
+            <picture class="section-cover">
               <source
                 media="(min-width:500px)"
                 srcset="img/graphic-design-cover.webp"
@@ -145,19 +155,21 @@
             </picture>
 
             <div class="discover">
-              <p>click to discover</p>
-              <img src="img/h-arrow.svg" alt="" />
+              <p class="typo--link">click to discover</p>
+              <img src="img/svg/red-arrow-horizontal.svg" alt="" />
             </div>
           </a>
 
-          <a href="#" class="project-category">
-            <section class="category-title">
-              <div class="w-one">
+          <a href="#" class="section_content">
+            <section class="section_title">
+              <div class="typo--h2 bg-title uppercase">
                 <span>p</span>
                 <span>h</span>
                 <span>o</span>
                 <span>t</span>
                 <span>o</span>
+              </div>
+              <div class="typo--h2 bg-title uppercase">
                 <span>g</span>
                 <span>r</span>
                 <span>a</span>
@@ -167,7 +179,7 @@
               </div>
             </section>
 
-            <picture class="category-cover">
+            <picture class="section-cover">
               <source
                 media="(min-width:500px)"
                 srcset="img/photography-cover.webp"
@@ -186,8 +198,8 @@
             </picture>
 
             <div class="discover">
-              <p>click to discover</p>
-              <img src="img/h-arrow.svg" alt="" />
+              <p class="typo--link">click to discover</p>
+              <img src="img/svg/red-arrow-horizontal.svg" alt="" />
             </div>
           </a>
         </article>
@@ -210,19 +222,5 @@
         </div>
       </footer>
     </div>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-  
-  <script>
-    gsap.to(".category-cover", {
-      scrollTrigger: {
-        trigger: "project-category",
-        scrub: true
-      },
-      y: -500,
-    });
-
-  </script> -->
   </body>
 </html>

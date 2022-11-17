@@ -1,0 +1,29 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100vw;
+  padding: 2vh 5vw 0 5vw;
+
+  position: fixed;
+  z-index: 2;
+
+  .nav-logo {
+    max-width: 40px;
+    min-width: 25px;
+  }
+
+  .voice {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: Druk;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $primary-color-accent;
+    }
+  }
+}

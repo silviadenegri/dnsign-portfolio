@@ -4,7 +4,9 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "babel-core": "^6.26.3",
     "babel-loader": "^9.1.0",
+    "babel-preset-env": "^1.7.0",
     "css": "^3.0.0",
     "css-loader": "^6.7.2",
     "gsap": "^3.11.3",
@@ -12,12 +14,17 @@
     "postcss": "^8.4.19",
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.3",
-    "scss-loader": "^0.0.1",
     "scss": "^0.2.4",
-    "webpack": "^5.75.0",
+    "scss-loader": "^0.0.1",
     "webpack-cli": "^4.10.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "sass": "^1.56.1",
+    "sass-loader": "^13.2.0",
+    "webpack": "^5.75.0"
+  },
   "scripts": {
     "start": "webpack watch"
   },

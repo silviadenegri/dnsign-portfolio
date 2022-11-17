@@ -1,0 +1,41 @@
+@mixin bigScreen {
+  @media only screen and (max-width: 1550px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin smallDesktop {
+  @media only screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin tabletLandscape {
+  @media only screen and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin tabletPortrait {
+  @media only screen and (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media only screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin txt-animated {
+  width: 95vw;
+  display: flex;
+  justify-content: flex-start;
+}
