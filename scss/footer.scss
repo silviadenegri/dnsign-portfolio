@@ -1,7 +1,5 @@
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include flex-between-center;
 
   padding: 2vw 2vw 0 2vw;
   width: 96vw;
@@ -25,7 +23,7 @@ footer {
   .mail {
     color: white;
     text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: $monospace;
 
     &:hover {
       color: $primary-color-accent;
@@ -43,5 +41,8 @@ footer {
         }
       }
     }
+  }
+  .black {
+    color: $color-neutral-darkest;
   }
 }

@@ -6,12 +6,19 @@
 $primary-color-accent: #c10202;
 $color-neutral-darkest: #272727;
 
+$monospace: 'Courier', Courier, monospace;
+$title-font: 'Druk';
+
 html {
   background-color: $color-neutral-darkest;
 }
 
 a {
   text-decoration: none;
+}
+
+.black {
+  color: $color-neutral-darkest;
 }
 
 @font-face {
@@ -25,15 +32,28 @@ a {
 }
 
 .typo--h3 {
+  font-size: 15rem;
+  font-family: $title-font;
 }
 
 .typo--h4 {
+  font-family: $title-font;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.typo--h5 {
+  font-family: $title-font;
+  font-size: 1.7rem;
+  text-transform: uppercase;
 }
 
 .typo--p {
 }
 
-.typo--lable {
+.typo--description {
+  font-family: $monospace;
+  font-size: 1rem;
 }
 
 .typo--link {

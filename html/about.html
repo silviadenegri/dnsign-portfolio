@@ -7,7 +7,7 @@
     <meta name="author" content="Silvia De Negri" />
 
     <title>Dnsign</title>
-    <link rel="icon" href="img/nav/pittogramma.svg" type="image/x-icon" />
+    <link rel="icon" href="../img/nav/pittogramma.svg" type="image/x-icon" />
     <meta name="title" content="Dnsign - Silvia De Negri's Portfolio" />
     <meta
       name="description"
@@ -22,7 +22,7 @@
       property="og:description"
       content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out"
     />
-    <meta property="og:image" content="img/social-card.png" />
+    <meta property="og:image" content="../img/social-card.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -32,16 +32,9 @@
       property="twitter:description"
       content="Hi! I'm Silvia a web & graphic designer based in Milan and this is my online portfolio so come and check it out"
     />
-    <meta property="twitter:image" content="img/social-card.png" />
+    <meta property="twitter:image" content="../img/social-card.png" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/base.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="../prod/style.css" />
   </head>
 
   <body>
@@ -49,16 +42,18 @@
       <nav>
         <a href="index.html"
           ><img
-            src="img/nav/pittogramma-b.svg"
+            src="../img/nav/pittogramma-b.svg"
             alt="pictogram illustrated of a faceless girl with short curly hair"
-            class="nav-logo about-page"
+            class="nav-logo black"
         /></a>
-        <a href="about.html" class="about about-page">about</a>
+        <div class="nav-voices">
+          <a href="about.html" class="voice black">about</a>
+        </div>
       </nav>
 
-      <main class="main-about">
+      <main class="about">
         <img
-          src="img/cv/cv-img.webp"
+          src="../img/cv/cv-img.webp"
           alt="Silvia with her camera"
           class="profile-picture"
         />
@@ -89,7 +84,7 @@
           >
 
           <div class="about-me">
-            <h2>About Me</h2>
+            <h2 class="typo--h4">About Me</h2>
             <p>
               I am a graduate student in Graphic Design & Multimedia at the LABA
               in Florence, Italy. During my path I developed a passion for web
@@ -100,7 +95,7 @@
           </div>
 
           <div class="hobby">
-            <h2>Hobby</h2>
+            <h2 class="typo--h4">Hobby</h2>
             <p>
               Music: 13 years of transverse flute, 2 years of violin and 6 years
               in an orchestra with international tours.<br />Photography: Loved
@@ -112,12 +107,23 @@
         </section>
 
         <article class="timeline">
-          <h2>education & work experice</h2>
+          <h2 class="typo--h4">education & work experice</h2>
           <hr />
 
           <section class="education">
             <div class="education-tile">
-              <h3 class="title">SPD - Milan</h3>
+              <h3 class="title typo--h5">Qwentès Italian</h3>
+              <div class="date">
+                <p>2022</p>
+                <p><br /></p>
+              </div>
+              <p class="task">Curricular Intership</p>
+              <p class="experience-description">
+                3 mounths curricular intership as Front-End Developer
+              </p>
+            </div>
+            <div class="education-tile">
+              <h3 class="title typo--h5">SPD - Milan</h3>
               <div class="date">
                 <p>2021</p>
                 <p>2022</p>
@@ -129,7 +135,7 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">LABA - Florence</h3>
+              <h3 class="title typo--h5">LABA - Florence</h3>
               <div class="date">
                 <p>2019</p>
                 <p>2021</p>
@@ -141,7 +147,7 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">
+              <h3 class="title typo--h5">
                 Association "Amici del Presepe" - Crevoladossola
               </h3>
               <div class="date">
@@ -155,7 +161,7 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">
+              <h3 class="title typo--h5">
                 Association of Irish Festival and Event - Ireland
               </h3>
               <div class="date">
@@ -169,7 +175,7 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">Gasthaus Heilighkreuz - Swiss</h3>
+              <h3 class="title typo--h5">Gasthaus Heilighkreuz - Swiss</h3>
               <div class="date">
                 <p>2017</p>
                 <p>-</p>
@@ -182,7 +188,7 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">Tara shop - England</h3>
+              <h3 class="title typo--h5">Tara shop - England</h3>
               <div class="date">
                 <p>2016</p>
                 <p><br /></p>
@@ -194,7 +200,7 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">Europa Gymnasium - Austria</h3>
+              <h3 class="title typo--h5">Europa Gymnasium - Austria</h3>
               <div class="date">
                 <p>2014</p>
                 <p><br /></p>
@@ -207,7 +213,9 @@
             </div>
 
             <div class="education-tile">
-              <h3 class="title">IIS Marconi Galletti Einaudi - Domodossola</h3>
+              <h3 class="title typo--h5">
+                IIS Marconi Galletti Einaudi - Domodossola
+              </h3>
               <div class="date">
                 <p>2012</p>
                 <p>2019</p>
@@ -223,59 +231,73 @@
 
         <article class="skills">
           <section class="software">
-            <h2>software</h2>
+            <h2 class="typo--h4">software</h2>
             <div class="row">
-              <img src="img/cv/ai.png" alt="" class="icon illustrator" />
-              <img src="img/cv/psd.png" alt="" class="icon photoshop" />
-              <img src="img/cv/ind.png" alt="" class="icon indesign" />
-              <img src="img/cv/figma.png" alt="" class="icon figma" />
+              <img src="../img/cv/ai.png" alt="" class="icon illustrator" />
+              <img src="../img/cv/psd.png" alt="" class="icon photoshop" />
+              <img src="../img/cv/ind.png" alt="" class="icon indesign" />
+              <img src="../img/cv/figma.png" alt="" class="icon figma" />
             </div>
             <div class="row">
-              <img src="img/cv/wordpress.png" alt="" class="icon wordpress" />
-              <img src="img/cv/atom.png" alt="" class="icon atom" />
-              <img src="img/cv/logic.png" alt="" class="icon logic" />
-              <img src="img/cv/pr.png" alt="" class="icon premier" />
+              <img
+                src="../img/cv/wordpress.png"
+                alt=""
+                class="icon wordpress"
+              />
+              <img src="../img/cv/atom.png" alt="" class="icon atom" />
+              <img src="../img/cv/logic.png" alt="" class="icon logic" />
+              <img src="../img/cv/pr.png" alt="" class="icon premier" />
             </div>
             <div class="row">
-              <img src="img/cv/aep.png" alt="" class="icon after-effect" />
-              <img src="img/cv/procreate.png" alt="" class="icon procreate" />
-              <img src="img/cv/blender.png" alt="" class="icon blender" />
-              <img src="img/cv/4d.png" alt="" class="icon cinema" />
+              <img src="../img/cv/aep.png" alt="" class="icon after-effect" />
+              <img
+                src="../img/cv/procreate.png"
+                alt=""
+                class="icon procreate"
+              />
+              <img src="../img/cv/blender.png" alt="" class="icon blender" />
+              <img src="../img/cv/4d.png" alt="" class="icon cinema" />
             </div>
           </section>
 
           <section class="languages">
-            <h2>languages</h2>
+            <h2 class="typo--h4">languages</h2>
             <div class="language">
-              <h3>
+              <h3 class="typo--h5">
                 Italian
-                <div class="filled"></div>
-                <div class="filled"></div>
-                <div class="filled"></div>
-                <div class="filled"></div>
-                <div class="filled"></div>
+                <div class="level">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                </div>
               </h3>
-              <h3>
+              <h3 class="typo--h5">
                 English
-                <div class="filled"></div>
-                <div class="filled"></div>
-                <div class="filled"></div>
-                <div class="filled"></div>
-                <div class="empty"></div>
+                <div class="level">
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="filled"></span>
+                  <span class="empty"></span>
+                </div>
               </h3>
-              <h3>
+              <h3 class="typo--h5">
                 German
-                <div class="filled"></div>
-                <div class="empty"></div>
-                <div class="empty"></div>
-                <div class="empty"></div>
-                <div class="empty"></div>
+                <div class="level">
+                  <span class="filled"></span>
+                  <span class="empty"></span>
+                  <span class="empty"></span>
+                  <span class="empty"></span>
+                  <span class="empty"></span>
+                </div>
               </h3>
             </div>
           </section>
 
           <section class="certification">
-            <h2>certifications</h2>
+            <h2 class="typo--h4">certifications</h2>
             <p>International Goethe A2</p>
             <p>ECDL Certificate</p>
           </section>
@@ -284,17 +306,17 @@
 
       <footer>
         <img
-          src="img/nav/pittogramma-b.svg"
+          src="../img/nav/pittogramma-b.svg"
           alt="pictogram illustrated of a faceless girl with short curly hair"
           class="footer-logo"
         />
         <a href="mailto:info@dnsign.it" class="mail black">info@dnsign.it</a>
         <div class="social">
           <a href="https://www.instagram.com/dnsign_/?hl=en" target="_blank"
-            ><img src="img/footer/instagram-b.svg" alt="instagram logo"
+            ><img src="../img/footer/instagram-b.svg" alt="instagram logo"
           /></a>
           <a href="https://www.linkedin.com/in/denegrisilvia/" target="_blank"
-            ><img src="img/footer/linkedin-b.svg" alt="linkedin logo"
+            ><img src="../img/footer/linkedin-b.svg" alt="linkedin logo"
           /></a>
         </div>
       </footer>

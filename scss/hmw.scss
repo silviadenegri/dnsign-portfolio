@@ -1,0 +1,20 @@
+.wrapper-hmw {
+  background-color: #173224;
+
+  .hmw-title > .typo--h3 {
+    color: #9b372c;
+    display: flex;
+    justify-content: sa;
+  }
+
+  .hmw {
+    color: white;
+  }
+
+  a {
+    color: white;
+    &:hover {
+      color: #9b372c;
+    }
+  }
+}

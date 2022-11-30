@@ -14,6 +14,10 @@ a {
   text-decoration: none;
 }
 
+.black {
+  color: #272727;
+}
+
 @font-face {
   font-family: "Druk";
   src: url(5324ac9826a8dfc6ecea.woff) format("woff");
@@ -21,6 +25,28 @@ a {
 .typo--h2 {
   font-size: 20rem;
   color: white;
+}
+
+.typo--h3 {
+  font-size: 15rem;
+  font-family: "Druk";
+}
+
+.typo--h4 {
+  font-family: "Druk";
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+.typo--h5 {
+  font-family: "Druk";
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.typo--description {
+  font-family: "Courier", Courier, monospace;
+  font-size: 1rem;
 }
 
 .typo--link {
@@ -33,6 +59,7 @@ a {
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100vw;
   padding: 2vh 5vw 0 5vw;
   position: fixed;
@@ -46,12 +73,21 @@ nav .voice {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Druk;
+  font-family: "Druk";
   letter-spacing: 2px;
   font-size: 1.5rem;
 }
 nav .voice:hover {
   color: #c10202;
+}
+
+.about-page {
+  color: #272727;
+  text-decoration: underline;
+}
+
+nav .black {
+  color: #272727;
 }
 
 footer {
@@ -76,7 +112,7 @@ footer .footer-logo {
 footer .mail {
   color: white;
   text-decoration: none;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier", Courier, monospace;
 }
 footer .mail:hover {
   color: #c10202;
@@ -89,6 +125,9 @@ footer .social a img {
 }
 footer .social a img:hover {
   opacity: 1;
+}
+footer .black {
+  color: #272727;
 }
 
 .landing {
@@ -120,7 +159,7 @@ footer .social a img:hover {
   max-width: 100px;
 }
 .landing .welcome-text h1 {
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Courier", Courier, monospace;
 }
 
 .sections--container {
@@ -136,7 +175,7 @@ footer .social a img:hover {
   color: #c10202;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: Druk;
+  font-family: "Druk";
   font-size: 4rem;
   padding: 2vw;
   width: 96vw;
@@ -168,6 +207,200 @@ footer .social a img:hover {
 }
 .sections--container .discover img {
   max-width: 50px;
+}
+
+.wrapper-about {
+  background-color: white;
+  font-family: "Courier", Courier, monospace;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  width: 100vw;
+  padding: 4vw;
+}
+.about a {
+  color: #272727;
+}
+.about a:hover {
+  text-decoration: underline;
+}
+.about .profile-picture {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.about .name {
+  grid-column: 1/5;
+  grid-row: 1/2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #c10202;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Druk";
+  font-size: 10rem;
+  height: 65vh;
+}
+.about .bio {
+  grid-column: 1/2;
+  grid-row: 2/4;
+  padding: 1vw 3vw 0 0;
+}
+.about .bio h2 {
+  padding: 2vw 0;
+}
+.about .timeline {
+  grid-column: 2/5;
+  grid-row: 2/3;
+}
+.about .timeline h2 {
+  padding: 0;
+}
+.about .timeline .education {
+  display: flex;
+  overflow-x: scroll;
+}
+.about .timeline .education .education-tile {
+  width: 20vw;
+}
+.about .timeline .education .title {
+  width: 20vw;
+  height: 22vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about .timeline .education .date {
+  padding: 3vh 0;
+  background-color: #272727;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2vh;
+}
+.about .timeline .education .task,
+.about .timeline .education .experience-description {
+  padding: 1vw;
+}
+.about .timeline .education .task {
+  text-transform: uppercase;
+}
+.about .skills {
+  grid-column: 2/5;
+  grid-row: 3/4;
+  display: flex;
+  justify-content: space-between;
+}
+.about .skills .software img {
+  max-width: 50px;
+}
+.about .language h3 {
+  display: flex;
+  padding: 2vh 0;
+}
+.about .language h3 .level {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.about .language h3 .level .filled {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c10202;
+}
+.about .language h3 .level .empty {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: solid 1px #c10202;
+}
+
+.single-project-cover {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+}
+.single-project-cover .project-cover-img {
+  grid-area: 1/2/1/2;
+  display: flex;
+  justify-content: center;
+}
+.single-project-cover .project-title {
+  grid-area: 1/2/1/2;
+  text-transform: uppercase;
+}
+.single-project-cover .project-title .typo--h3 {
+  display: flex;
+  justify-content: space-around;
+  width: 95vw;
+}
+
+.project-description {
+  width: 95vw;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5vw;
+  position: fixed;
+  bottom: 8vh;
+}
+.project-description a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-description a img {
+  width: 6vh;
+}
+.project-description .concept {
+  width: 20vw;
+}
+
+.project-display {
+  padding: 20vh 0;
+}
+.project-display .slideshow-title {
+  display: none;
+}
+.project-display .project_mock-up {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: auto;
+}
+.project-display .project_mock-up img {
+  grid-area: 1/2/1/2;
+}
+.project-display .project_mock-up .slideshow {
+  grid-area: 1/2/1/2;
+  padding: 2.7vh 0 0 2.5vw;
+}
+.project-display .project_mock-up .slideshow .slides {
+  width: 33vw;
+}
+
+.wrapper-hmw {
+  background-color: #173224;
+}
+.wrapper-hmw .hmw-title > .typo--h3 {
+  color: #9b372c;
+  display: flex;
+  justify-content: sa;
+}
+.wrapper-hmw .hmw {
+  color: white;
+}
+.wrapper-hmw a {
+  color: white;
+}
+.wrapper-hmw a:hover {
+  color: #9b372c;
 }
 
 /*# sourceMappingURL=style.css.map*/

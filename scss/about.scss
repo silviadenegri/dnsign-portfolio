@@ -1,0 +1,128 @@
+.wrapper-about {
+  background-color: white;
+  font-family: $monospace;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 0.5fr repeat(3, 1fr);
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  width: 100vw;
+  padding: 4vw;
+
+  a {
+    color: $color-neutral-darkest;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .profile-picture {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .name {
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+
+    @include flex-between-center;
+
+    color: $primary-color-accent;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: $title-font;
+    font-size: 10rem;
+
+    height: 65vh;
+  }
+  .bio {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+
+    padding: 1vw 3vw 0 0;
+
+    h2 {
+      padding: 2vw 0;
+    }
+  }
+
+  .timeline {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+
+    h2 {
+      padding: 0;
+    }
+    .education {
+      display: flex;
+      overflow-x: scroll;
+
+      .education-tile {
+        width: 20vw;
+      }
+      .title {
+        width: 20vw;
+        height: 22vh;
+
+        @include flex-center-center;
+      }
+      .date {
+        padding: 3vh 0;
+
+        background-color: $color-neutral-darkest;
+        color: white;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 2vh;
+      }
+      .task,
+      .experience-description {
+        padding: 1vw;
+      }
+      .task {
+        text-transform: uppercase;
+      }
+    }
+  }
+  .skills {
+    grid-column: 2 / 5;
+    grid-row: 3 / 4;
+
+    display: flex;
+    justify-content: space-between;
+    .software {
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+
+  .language {
+    h3 {
+      display: flex;
+      padding: 2vh 0;
+
+      .level {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        .filled {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: $primary-color-accent;
+        }
+        .empty {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: solid 1px $primary-color-accent;
+        }
+      }
+    }
+  }
+}
