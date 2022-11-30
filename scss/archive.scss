@@ -1,0 +1,66 @@
+.archive {
+  display: flex;
+
+  margin-left: 5vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  height: 100vh;
+
+  .archive-project {
+    padding: 15vh 5vw 0 0;
+    display: grid;
+    scroll-snap-align: start;
+    &:hover {
+      .info {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+      }
+    }
+
+    .cover,
+    .archive-title,
+    .info {
+      grid-column: 1/2;
+      grid-row: 1/2;
+      width: 85vw;
+      height: 80vh;
+    }
+
+    .archive-img {
+      display: flex;
+      justify-content: center;
+    }
+    .title__archive {
+      display: flex;
+      justify-content: space-around;
+
+      color: #9b372c;
+    }
+    .info {
+      color: white;
+      display: none;
+    }
+  }
+}
+
+.scroll {
+  display: flex;
+  position: fixed;
+  bottom: 1vh;
+  left: 48vw;
+  width: 85vw;
+
+  p {
+    color: white;
+    font-family: $monospace;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1vw;
+  }
+  img {
+    width: 2vw;
+  }
+}

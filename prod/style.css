@@ -25,11 +25,13 @@ a {
 .typo--h2 {
   font-size: 20rem;
   color: white;
+  text-transform: uppercase;
 }
 
 .typo--h3 {
   font-size: 15rem;
   font-family: "Druk";
+  text-transform: uppercase;
 }
 
 .typo--h4 {
@@ -41,6 +43,12 @@ a {
 .typo--h5 {
   font-family: "Druk";
   font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.title__archive {
+  font-size: 10rem;
+  font-family: "Druk";
   text-transform: uppercase;
 }
 
@@ -401,6 +409,71 @@ footer .black {
 }
 .wrapper-hmw a:hover {
   color: #9b372c;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.archive {
+  display: flex;
+  margin-left: 5vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  height: 100vh;
+}
+.archive .archive-project {
+  padding: 15vh 5vw 0 0;
+  display: grid;
+  scroll-snap-align: start;
+}
+.archive .archive-project:hover .info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.archive .archive-project .cover,
+.archive .archive-project .archive-title,
+.archive .archive-project .info {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  width: 85vw;
+  height: 80vh;
+}
+.archive .archive-project .archive-img {
+  display: flex;
+  justify-content: center;
+}
+.archive .archive-project .title__archive {
+  display: flex;
+  justify-content: space-around;
+  color: #9b372c;
+}
+.archive .archive-project .info {
+  color: white;
+  display: none;
+}
+
+.scroll {
+  display: flex;
+  position: fixed;
+  bottom: 1vh;
+  left: 48vw;
+  width: 85vw;
+}
+.scroll p {
+  color: white;
+  font-family: "Courier", Courier, monospace;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  padding: 0 1vw;
+}
+.scroll img {
+  width: 2vw;
 }
 
 /*# sourceMappingURL=style.css.map*/

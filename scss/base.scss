@@ -29,11 +29,13 @@ a {
 .typo--h2 {
   font-size: 20rem;
   color: white;
+  text-transform: uppercase;
 }
 
 .typo--h3 {
   font-size: 15rem;
   font-family: $title-font;
+  text-transform: uppercase;
 }
 
 .typo--h4 {
@@ -49,6 +51,12 @@ a {
 }
 
 .typo--p {
+}
+
+.title__archive {
+  font-size: 10rem;
+  font-family: $title-font;
+  text-transform: uppercase;
 }
 
 .typo--description {
