@@ -28,19 +28,65 @@
       height: 80vh;
     }
 
-    .archive-img {
+    .cover {
+      filter: grayscale(1);
+      z-index: -5;
       display: flex;
       justify-content: center;
+      align-items: center;
     }
     .title__archive {
       display: flex;
       justify-content: space-around;
-
-      color: #9b372c;
     }
     .info {
       color: white;
       display: none;
+    }
+  }
+  .hmw_ {
+    .title__archive {
+      color: #9b372c;
+    }
+  }
+  .alba_ {
+    .title__archive {
+      color: #f5e8ad;
+    }
+    .archive-img {
+      width: 45vw;
+    }
+  }
+  .rayban_ {
+    .title__archive {
+      color: #ff0000;
+    }
+    .archive-img {
+      height: 65vh;
+      width: auto;
+    }
+  }
+  .lx_ {
+    .title__archive {
+      color: white;
+      span {
+        text-shadow: 0 1px 5px rgba(0, 0, 0, 0.286);
+        &:first-child,
+        &:last-child {
+          text-shadow: none;
+        }
+      }
+    }
+    .archive-img {
+      width: 40vw;
+    }
+  }
+  .jj_ {
+    .title__archive {
+      color: #fff000;
+    }
+    .archive-img {
+      width: 40vw;
     }
   }
 }

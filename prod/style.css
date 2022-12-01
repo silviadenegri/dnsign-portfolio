@@ -443,18 +443,54 @@ footer .black {
   width: 85vw;
   height: 80vh;
 }
-.archive .archive-project .archive-img {
+.archive .archive-project .cover {
+  filter: grayscale(1);
+  z-index: -5;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .archive .archive-project .title__archive {
   display: flex;
   justify-content: space-around;
-  color: #9b372c;
 }
 .archive .archive-project .info {
   color: white;
   display: none;
+}
+.archive .hmw_ .title__archive {
+  color: #9b372c;
+}
+.archive .alba_ .title__archive {
+  color: #f5e8ad;
+}
+.archive .alba_ .archive-img {
+  width: 45vw;
+}
+.archive .rayban_ .title__archive {
+  color: #ff0000;
+}
+.archive .rayban_ .archive-img {
+  height: 65vh;
+  width: auto;
+}
+.archive .lx_ .title__archive {
+  color: white;
+}
+.archive .lx_ .title__archive span {
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.286);
+}
+.archive .lx_ .title__archive span:first-child, .archive .lx_ .title__archive span:last-child {
+  text-shadow: none;
+}
+.archive .lx_ .archive-img {
+  width: 40vw;
+}
+.archive .jj_ .title__archive {
+  color: #fff000;
+}
+.archive .jj_ .archive-img {
+  width: 40vw;
 }
 
 .scroll {
