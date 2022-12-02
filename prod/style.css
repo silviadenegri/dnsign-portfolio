@@ -623,4 +623,24 @@ footer .black {
   display: flex;
 }
 
+.wrapper-jj {
+  background-color: #414445;
+}
+.wrapper-jj .fixed-bottom .b-line {
+  border-bottom: 2px solid #272727;
+}
+.wrapper-jj .jj-cover {
+  width: 30vw;
+}
+.wrapper-jj .jj-title .typo--h3 {
+  color: #fff000;
+  display: flex;
+}
+.wrapper-jj .typo--p {
+  color: white;
+}
+.wrapper-jj a {
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map*/

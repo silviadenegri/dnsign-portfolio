@@ -1,0 +1,26 @@
+.wrapper-jj {
+  background-color: #414445;
+
+  .fixed-bottom {
+    .b-line {
+      border-bottom: 2px solid $color-neutral-darkest;
+    }
+  }
+
+  .jj-cover {
+    width: 30vw;
+  }
+
+  .jj-title .typo--h3 {
+    color: #fff000;
+    display: flex;
+  }
+
+  .typo--p {
+    color: white;
+  }
+
+  a {
+    color: white;
+  }
+}
