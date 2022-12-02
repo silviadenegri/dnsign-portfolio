@@ -1,0 +1,18 @@
+.wrapper-lx {
+  background-color: white;
+
+  .fixed-bottom {
+    .b-line {
+      border-bottom: 2px solid $color-neutral-darkest;
+    }
+  }
+
+  .lx-cover {
+    width: 70vw;
+  }
+
+  .lx-title .typo--h3 {
+    color: #1d1d1f;
+    display: flex;
+  }
+}

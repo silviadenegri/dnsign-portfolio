@@ -609,4 +609,18 @@ footer .black {
   color: #9b372c;
 }
 
+.wrapper-lx {
+  background-color: white;
+}
+.wrapper-lx .fixed-bottom .b-line {
+  border-bottom: 2px solid #272727;
+}
+.wrapper-lx .lx-cover {
+  width: 70vw;
+}
+.wrapper-lx .lx-title .typo--h3 {
+  color: #1d1d1f;
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map*/
