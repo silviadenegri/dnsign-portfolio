@@ -46,15 +46,15 @@ a {
   text-transform: uppercase;
 }
 
-.title__archive {
-  font-size: 10rem;
-  font-family: "Druk";
-  text-transform: uppercase;
-}
-
-.typo--description {
+.typo--p {
   font-family: "Courier", Courier, monospace;
   font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.typo--note {
+  font-family: "Courier", Courier, monospace;
+  font-size: 0.65rem;
 }
 
 .typo--link {
@@ -62,6 +62,12 @@ a {
   text-transform: lowercase;
   font-size: 1.2rem;
   color: white;
+}
+
+.title__archive {
+  font-size: 10rem;
+  font-family: "Druk";
+  text-transform: uppercase;
 }
 
 nav {
@@ -94,7 +100,7 @@ nav .voice:hover {
   text-decoration: underline;
 }
 
-nav .black {
+nav .nav-voices .black {
   color: #272727;
 }
 
@@ -136,6 +142,14 @@ footer .social a img:hover {
 }
 footer .black {
   color: #272727;
+}
+
+.icon-only .social {
+  display: flex;
+  padding: 2vw 2vw 0 2vw;
+  width: 96vw;
+  justify-content: flex-end;
+  align-content: center;
 }
 
 .landing {
@@ -343,6 +357,8 @@ footer .black {
 }
 .single-project-cover .project-title {
   grid-area: 1/2/1/2;
+  padding-top: 5vh;
+  height: 90vh;
   text-transform: uppercase;
 }
 .single-project-cover .project-title .typo--h3 {
@@ -351,24 +367,48 @@ footer .black {
   width: 95vw;
 }
 
-.project-description {
-  width: 95vw;
+.fixed-bottom {
   display: flex;
   justify-content: space-between;
-  margin: 0 5vw;
   position: fixed;
+  margin: 0 3vw;
   bottom: 8vh;
+  width: 95vw;
 }
-.project-description a {
+.fixed-bottom img {
+  height: 3vh;
+  transform: rotate(40deg);
+  margin-bottom: 1.5vh;
+}
+.fixed-bottom .underline {
+  border-bottom: 2px solid white;
+  width: 4vw;
+  margin-top: 0.5vw;
+}
+.fixed-bottom .cta {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.project-description a img {
-  width: 6vh;
+.fixed-bottom .project-description {
+  width: 75vw;
+  display: flex;
+  justify-content: space-between;
 }
-.project-description .concept {
-  width: 20vw;
+.fixed-bottom .project-description .web-link img {
+  transform: rotate(210deg);
+}
+.fixed-bottom .project-description .web-link span {
+  width: 3.5vw;
+}
+.fixed-bottom .project-description .prototype-link img {
+  transform: rotate(210deg);
+}
+.fixed-bottom .project-description .prototype-link span {
+  width: 4.5vw;
+}
+.fixed-bottom .project-description .concept {
+  width: 30vw;
 }
 
 .project-display {
@@ -407,15 +447,11 @@ footer .black {
 .wrapper-hmw a {
   color: white;
 }
-.wrapper-hmw a:hover {
-  color: #9b372c;
+.wrapper-hmw .magazine {
+  color: white;
 }
-
-.slider {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+.wrapper-hmw .magazine:hover {
+  color: #9b372c;
 }
 
 .archive {
@@ -510,6 +546,22 @@ footer .black {
 }
 .scroll img {
   width: 2vw;
+}
+
+.wrapper-alba {
+  background-image: url(be4946ff70e84766e022.webp);
+  background-size: cover;
+}
+.wrapper-alba .fixed-bottom .b-line {
+  border-bottom: 2px solid #272727;
+}
+.wrapper-alba .alba-cover {
+  width: 50vw;
+}
+.wrapper-alba .alba-title .typo--h3 {
+  color: #323232;
+  display: flex;
+  justify-content: sa;
 }
 
 /*# sourceMappingURL=style.css.map*/

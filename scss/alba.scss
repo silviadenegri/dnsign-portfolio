@@ -1,0 +1,21 @@
+.wrapper-alba {
+  background-image: url(img/project/alba/background.webp);
+  background-size: cover;
+  //   background-color: beige;
+
+  .fixed-bottom {
+    .b-line {
+      border-bottom: 2px solid $color-neutral-darkest;
+    }
+  }
+
+  .alba-cover {
+    width: 50vw;
+  }
+
+  .alba-title .typo--h3 {
+    color: #323232;
+    display: flex;
+    justify-content: sa;
+  }
+}

@@ -51,17 +51,14 @@ a {
 }
 
 .typo--p {
-}
-
-.title__archive {
-  font-size: 10rem;
-  font-family: $title-font;
-  text-transform: uppercase;
-}
-
-.typo--description {
   font-family: $monospace;
   font-size: 1rem;
+  line-height: 1.3rem;
+}
+
+.typo--note {
+  font-family: $monospace;
+  font-size: 0.65rem;
 }
 
 .typo--link {
@@ -69,4 +66,10 @@ a {
   text-transform: lowercase;
   font-size: 1.2rem;
   color: white;
+}
+
+.title__archive {
+  font-size: 10rem;
+  font-family: $title-font;
+  text-transform: uppercase;
 }

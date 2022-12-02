@@ -46,3 +46,11 @@ footer {
     color: $color-neutral-darkest;
   }
 }
+
+.icon-only .social {
+  display: flex;
+  padding: 2vw 2vw 0 2vw;
+  width: 96vw;
+  justify-content: flex-end;
+  align-content: center;
+}
