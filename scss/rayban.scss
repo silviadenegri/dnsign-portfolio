@@ -1,0 +1,28 @@
+.wrapper-rayban {
+  background-color: #000000;
+
+  .rayban-title > .typo--h3 {
+    color: #ff0000;
+    display: flex;
+  }
+
+  .typo--p {
+    color: white;
+  }
+
+  .rayban-cover {
+    height: 80vh;
+    width: auto;
+  }
+
+  a {
+    color: white;
+  }
+
+  .magazine {
+    color: white;
+    &:hover {
+      color: #9b372c;
+    }
+  }
+}

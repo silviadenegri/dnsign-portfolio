@@ -417,6 +417,23 @@ footer .black {
 .project-display .slideshow-title {
   display: none;
 }
+.project-display .phone-mock {
+  display: grid;
+  grid-template-columns: 1;
+}
+.project-display .phone-mock img {
+  grid-area: 1/2/1/2;
+  height: 80vh;
+  padding-left: 5vw;
+}
+.project-display .phone-mock .phone-slideshow {
+  grid-area: 1/2/1/2;
+  padding: 2.5vh 0 0 1.2vw;
+}
+.project-display .phone-mock .phone-slideshow img {
+  height: 69vh;
+  width: auto;
+}
 .project-display .project_mock-up {
   display: grid;
   grid-template-columns: 1;
@@ -431,6 +448,11 @@ footer .black {
 }
 .project-display .project_mock-up .slideshow .slides {
   width: 33vw;
+}
+
+.phone {
+  margin-top: 10vh;
+  padding: 0;
 }
 
 .wrapper-hmw {
@@ -561,7 +583,30 @@ footer .black {
 .wrapper-alba .alba-title .typo--h3 {
   color: #323232;
   display: flex;
-  justify-content: sa;
+}
+
+.wrapper-rayban {
+  background-color: #000000;
+}
+.wrapper-rayban .rayban-title > .typo--h3 {
+  color: #ff0000;
+  display: flex;
+}
+.wrapper-rayban .typo--p {
+  color: white;
+}
+.wrapper-rayban .rayban-cover {
+  height: 80vh;
+  width: auto;
+}
+.wrapper-rayban a {
+  color: white;
+}
+.wrapper-rayban .magazine {
+  color: white;
+}
+.wrapper-rayban .magazine:hover {
+  color: #9b372c;
 }
 
 /*# sourceMappingURL=style.css.map*/

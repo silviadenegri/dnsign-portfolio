@@ -80,7 +80,25 @@
   .slideshow-title {
     display: none;
   }
+  .phone-mock {
+    display: grid;
+    grid-template-columns: 1;
 
+    img {
+      grid-area: 1/2/1/2;
+      height: 80vh;
+      padding-left: 5vw;
+    }
+
+    .phone-slideshow {
+      grid-area: 1/2/1/2;
+      padding: 2.5vh 0 0 1.2vw;
+      img {
+        height: 69vh;
+        width: auto;
+      }
+    }
+  }
   .project_mock-up {
     display: grid;
     grid-template-columns: 1;
@@ -98,4 +116,9 @@
       }
     }
   }
+}
+
+.phone {
+  margin-top: 10vh;
+  padding: 0;
 }
